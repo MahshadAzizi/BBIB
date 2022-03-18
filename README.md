@@ -1,4 +1,4 @@
-#environment variables
+# environment variables
 ```bash
 $DB_NAME=
 $DB_USERNAME=
@@ -7,7 +7,7 @@ $DB_HOST=
 $DB_PORT=
 ```
 
-#installation
+# installation
 ```bash
 pip install -r requirements.txt
 python3 manage.py makemigrations
