@@ -1,7 +1,7 @@
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect
 from django.views import View
 from django.views.generic import FormView, DetailView
 from .models import User
@@ -71,7 +71,6 @@ class UserDetail(DetailView):
 
 def user_update(request, id):
     instance = User.objects.get(id=id)
-    # obj = get_object_or_404(User, id=id)
     form = AddUserForm(request.POST or None, instance=instance)
     if form.is_valid():
         form.save()

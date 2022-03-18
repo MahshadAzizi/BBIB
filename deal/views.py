@@ -1,12 +1,10 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.http import HttpResponse
-from django.shortcuts import render, redirect
-from django.views import View
+from django.shortcuts import redirect
 from django.views.generic import FormView
 from .forms import DealForm
 from deal.models import Deal
 from .serializers import DealSerializer
-from rest_framework import status, permissions
+from rest_framework import permissions
 from rest_framework import generics
 from user.models import User
 

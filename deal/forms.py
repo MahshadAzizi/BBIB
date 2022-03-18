@@ -1,8 +1,5 @@
 from django import forms
-from .models import Deal
 from user.models import User
-from django_jalali.forms import jDateTimeField
-from django_jalali.admin.widgets import AdminSplitjDateTime
 
 BRANCHES = (
     ('100', '100'),
