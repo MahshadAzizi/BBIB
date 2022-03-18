@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deal</title>
+</head>
+<body>
+<center>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_ul }}
+        <input type="submit" value="Save">
+    </form>
+</center>
+</body>
+</html>
