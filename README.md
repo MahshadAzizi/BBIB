@@ -1,10 +1,9 @@
 # environment variables
 ```bash
-$DB_NAME=
-$DB_USERNAME=
-$DB_PASSWORD=
-$DB_HOST=
-$DB_PORT=
+$DATABASE_NAME=
+$DATABASE_USER=
+$DATABASE_PASS=
+$DATABASE_HOST=
 ```
 
 # installation
